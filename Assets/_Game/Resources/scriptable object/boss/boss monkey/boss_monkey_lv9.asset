@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7e3c02d9c20d6dba7ffaf3663b9d4d, type: 3}
+  m_Name: "boss_monkey_lv9"
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _bulletSpeed: 0
+  _hp: 4800
+  _moveSpeed: 0
+  _attackTimePerSecond: 1
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _stoneDamage: 208
+  _spikeDamage: 130
+  _spikeSpeed: 9
+  _spikeDelay: 1.2
+  _numberSpikes: 5
+  _numberMinions: 3
+  _levelMinions: 10
+  _hp65_stoneDamage: 249.6
+  _hp65_spikeDamage: 156
+  _hp65_spikeSpeed: 9.9
+  _hp65_spikeDelay: 0.8
+  _hp65_numberSpikes: 5
+  _hp65_numberMinions: 4
+  _hp35_stoneDamage: 312
+  _hp35_spikeDamage: 195
+  _hp35_spikeSpeed: 10.8
+  _hp35_spikeDelay: 0.5
+  _hp35_numberSpikes: 5
+  _hp35_numberMinions: 5

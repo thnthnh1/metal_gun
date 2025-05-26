@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f1af1f57ffe34f8eb26da34bc8849670
+timeCreated: 1580403916
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "IMPACT"
+  fontNames:
+  - Impact
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8834933322462621898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8834933322462629012}
+  - component: {fileID: 8834933322462633946}
+  - component: {fileID: 8834933322462633945}
+  m_Layer: 0
+  m_Name: Main Menu Controller
+  m_TagString: 
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8834933322462629012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834933322462621898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8834933322462633946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834933322462621898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ad1f48b15e0ffe0f81ae0cfb674cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelMainMenu: {fileID: 0}
+  panelSoldier: {fileID: 0}
+  panelWeapon: {fileID: 0}
+  panelSelectStage: {fileID: 0}
+  panelQuests: {fileID: 0}
+  panelIap: {fileID: 0}
+  panelSkillTree: {fileID: 0}
+  panelOpenchestUI: {fileID: 0}
+  giftCodeUI: {fileID: 0}
+  panelNewCharaterUI: {fileID: 0}
+  switchCharacterButton: {fileID: 0}
+  panelDailyGift: {fileID: 0}
+  btnShowDailyGift: {fileID: 0}
+  freeGiftController: {fileID: 0}
+  btnShowSoildierGiftCode: {fileID: 0}
+  btnNewbiePack: {fileID: 0}
+  newbieController: {fileID: 0}
+  btnSkill: {fileID: 0}
+  btnStarterPack: {fileID: 0}
+  panelStarterPack: {fileID: 0}
+  textPriceStarterPack: {fileID: 0}
+  specialOfferController: {fileID: 0}
+  notiWeapon: {fileID: 0}
+  notiSoldier: {fileID: 0}
+  notiDailyGift: {fileID: 0}
+  notiQuests: {fileID: 0}
+  notiTournament: {fileID: 0}
+  numberUnusedSkillPoints: {fileID: 0}
+  hudTournament: {fileID: 0}
+  popupLoginFacebook: {fileID: 0}
+  starterAnims:
+  - {fileID: 0}
+  currentScene: 0
+  IsFBLogin: 0
+--- !u!114 &8834933322462633945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834933322462621898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ae303de39d74cfb478a1cb96a499e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

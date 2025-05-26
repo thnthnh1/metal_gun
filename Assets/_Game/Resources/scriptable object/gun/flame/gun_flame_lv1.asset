@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59f0cf0d4d02a3f2ab6ab71ce9887ce, type: 3}
+  m_Name: "gun_flame_lv1"
+  m_EditorClassIdentifier: 
+  _hasCartouche: 0
+  _damage: 4.3
+  _attackTimePerSecond: 1
+  _bulletSpeed: 0
+  _bulletPerShoot: 1
+  _ammo: 120
+  _criticalRate: 10
+  _criticalDamageBonus: 55
+  _timeApplyDamage: 0.25

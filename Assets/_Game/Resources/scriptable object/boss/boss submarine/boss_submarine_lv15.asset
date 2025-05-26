@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf91eeb7d33b356cb8c0332d8e136d9, type: 3}
+  m_Name: "boss_submarine_lv15"
+  m_EditorClassIdentifier: 
+  _damage: 95
+  _bulletSpeed: 5
+  _hp: 5600
+  _moveSpeed: 0
+  _attackTimePerSecond: 0
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _numberOfBullet: 4
+  _numberOfRocket: 5
+  _timeDelayRocket: 1
+  _rocketSpeed: 6
+  _rocketDamage: 201.5
+  _numberOfMarine: 3
+  _timeDelaySpawnMarine: 0.5
+  _marineLevel: 15
+  _goreDamage: 93
+  _rageNumberOfRocket: 5
+  _rageRocketDamage: 302.25
+  _rageRocketSpeed: 7.5
+  _rageNumberOfMarine: 5
+  _rageMarineLevel: 15
+  _rageGoreDamage: 120.9

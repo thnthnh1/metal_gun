@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b539bb97ea32f4853c2060f6599229f9, type: 3}
+  m_Name: "gun_tesla_lv10"
+  m_EditorClassIdentifier: 
+  _hasCartouche: 0
+  _damage: 27.06
+  _attackTimePerSecond: 1
+  _bulletSpeed: 0
+  _bulletPerShoot: 1
+  _ammo: 80
+  _criticalRate: 15
+  _criticalDamageBonus: 65
+  _timeApplyDamage: 0.33
+  _numberEnemyChain: 3

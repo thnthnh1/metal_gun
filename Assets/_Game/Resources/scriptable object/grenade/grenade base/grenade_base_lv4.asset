@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f01157681f71dda33496d34d3dde566, type: 3}
+  m_Name: "grenade_base_lv4"
+  m_EditorClassIdentifier: 
+  _damage: 87.5
+  _radius: 1.06
+  _cooldown: 2.37
+  _criticalRate: 0
+  _criticalDamageBonus: 0

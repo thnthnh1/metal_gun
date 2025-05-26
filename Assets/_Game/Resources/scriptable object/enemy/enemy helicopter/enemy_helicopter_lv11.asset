@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b40100a21f17071964f07a21ebc8b50, type: 3}
+  m_Name: "enemy_helicopter_lv11"
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _bulletSpeed: 0
+  _hp: 282
+  _moveSpeed: 5.5
+  _attackTimePerSecond: 0.61
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _projectileDamage: 32
+  _projectileDamageRadius: 1
+  _projectileSpeed: 4
+  _numberOfProjectilePerShot: 2

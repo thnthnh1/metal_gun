@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e39eae8c242201055429869776199e, type: 3}
+  m_Name: "gun_scar_H_lv7"
+  m_EditorClassIdentifier: 
+  _hasCartouche: 1
+  _damage: 14.69
+  _attackTimePerSecond: 3.5
+  _bulletSpeed: 15
+  _bulletPerShoot: 1
+  _ammo: 0
+  _criticalRate: 15
+  _criticalDamageBonus: 100

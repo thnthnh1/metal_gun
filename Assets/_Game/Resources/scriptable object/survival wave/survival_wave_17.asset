@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f20d60ee93db63a151652cb0ba7576, type: 3}
+  m_Name: "survival_wave_17"
+  m_EditorClassIdentifier: 
+  _waveId: 17
+  _isBossWave: 0
+  _bossType: 0
+  _minLevelUnit: 3
+  _maxLevelUnit: 4
+  _time:
+  - time: 1
+    units:
+    - type: 4
+      quantity: 3
+    - type: 11
+      quantity: 3
+    - type: 101
+      quantity: 5
+  - time: 4
+    units:
+    - type: 3
+      quantity: 3
+    - type: 8
+      quantity: 3
+    - type: 5
+      quantity: 3
+    - type: 100
+      quantity: 1
+  - time: 16
+    units:
+    - type: 0
+      quantity: 3
+    - type: 1
+      quantity: 3
+    - type: 103
+      quantity: 1
+  - time: 25
+    units:
+    - type: 103
+      quantity: 1
+    - type: 7
+      quantity: 4
+    - type: 11
+      quantity: 3
+  _timeDropItem: []

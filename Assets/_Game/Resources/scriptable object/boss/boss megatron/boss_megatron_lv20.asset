@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391cd569314663f680083b4f70343708, type: 3}
+  m_Name: "boss_megatron_lv20"
+  m_EditorClassIdentifier: 
+  _damage: 96
+  _bulletSpeed: 10
+  _hp: 3500
+  _moveSpeed: 3.7
+  _attackTimePerSecond: 2
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _smashDamage: 240
+  _jumpDamage: 168

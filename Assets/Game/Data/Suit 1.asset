@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26001822522643f4db19da510ab39f9a, type: 3}
+  m_Name: Suit 1
+  m_EditorClassIdentifier: 
+  itemID: Suit 1
+  namex: Suit 1
+  itemType: 3
+  iconSprite: {fileID: 21300000, guid: 9b0e7afe8fa523f4694cf040a0ee0ed3, type: 3}
+  isDefault: 0
+  stats: 5
+  damageMin: 12
+  damageMax: 20
+  fireRate: 520
+  critDamage: 3
+  critRate: 16

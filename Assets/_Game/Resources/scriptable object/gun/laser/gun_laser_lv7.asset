@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2302b75171162b2c5b2c57b71d9ce709, type: 3}
+  m_Name: "gun_laser_lv7"
+  m_EditorClassIdentifier: 
+  _hasCartouche: 0
+  _damage: 22.53
+  _attackTimePerSecond: 1
+  _bulletSpeed: 0
+  _bulletPerShoot: 0
+  _ammo: 80
+  _criticalRate: 10
+  _criticalDamageBonus: 70
+  _timeApplyDamage: 0.35

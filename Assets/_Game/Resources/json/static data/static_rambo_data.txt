@@ -1,0 +1,23 @@
+{
+    "0": {
+        "id": 0,
+        "ramboName": "JOHN DIGGER",
+        "country": "America",
+        "description": "",
+        "upgradeInfo": [ 0, 350, 12740, 14560, 16380, 20020, 23660, 27300, 30940, 34580 ]
+    },
+    "1": {
+        "id": 0,
+        "ramboName": "SHADOW DANCE",
+        "country": "France",
+        "description": "",
+        "upgradeInfo": [ 0, 850, 13240, 15060, 16880, 20520, 24160, 27800, 31440, 35080 ]
+    },
+    "2": {
+        "id": 0,
+        "ramboName": "ROBOTIC",
+        "country": "England",
+        "description": "",
+        "upgradeInfo": [ 0, 500, 12890, 14710, 16630, 20170, 23810, 27450, 31090, 34730 ]
+    }
+}

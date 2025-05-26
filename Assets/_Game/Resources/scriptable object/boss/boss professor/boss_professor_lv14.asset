@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ad7580ff162cb37826f1e115f3e148, type: 3}
+  m_Name: "boss_professor_lv14"
+  m_EditorClassIdentifier: 
+  _damage: 180
+  _bulletSpeed: 2
+  _hp: 2925
+  _moveSpeed: 4
+  _attackTimePerSecond: 2.04
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _satelliteHp: 325
+  _rotateSpeed: 25
+  _shootDuration: 6.5
+  _energyPulseDamage: 288
+  _numberEnemySpawn: 5
+  _enemyMinLevel: 15
+  _enemyMaxLevel: 15

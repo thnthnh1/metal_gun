@@ -1,0 +1,370 @@
+{
+    "appleSKU": "",
+    "appleTeamID": "",
+    "enableCodelessAutoInitialization": false,
+    "products": [
+        {
+            "id": "com.metal.gem100",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    199,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 1.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metal.gem300",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    599,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 5.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metal.gem500",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    999,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 9.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metal.gem1000",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    1999,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 19.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metal.gem2500",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    4999,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 49.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metal.gem5000",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    9999,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 99.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metaltitan.battleessentials1",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    199,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 1.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metaltitan.battleessentials2",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    399,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 3.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metaltitan.battleessentials3",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    699,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 6.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metaltitan.starterpack",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    99,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 0.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "com.metaltitan.removeads",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    199,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 1.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        }
+    ]
+}

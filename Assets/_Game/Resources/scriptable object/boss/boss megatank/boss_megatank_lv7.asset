@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be866a317483075b864fb95f7c2cd547, type: 3}
+  m_Name: "boss_megatank_lv7"
+  m_EditorClassIdentifier: 
+  _damage: 66
+  _bulletSpeed: 6
+  _hp: 900
+  _moveSpeed: 5
+  _attackTimePerSecond: 1.21
+  _criticalRate: 0
+  _criticalDamageBonus: 0
+  _plasmaDuration: 5.6
+  _rocketDamage: 110
+  _rocketRadius: 1.2
+  _goreDamage: 132
+  _rageGunDamage: 99
+  _rageRocketDamage: 165
+  _rageGoreDamage: 176
+  _rageAttackTimeSecond: 1.45
+  _rageBulletSpeed: 8

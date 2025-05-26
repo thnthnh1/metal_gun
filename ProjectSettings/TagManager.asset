@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy Body
+  - Destructible Obstacle
+  - Map Lock Point
+  - Enemy
+  - Bullet Rambo
+  - Bullet Enemy
+  - Map
+  - Foot Megatron
+  - Enemy Body Part
+  - Ground Upstairs
+  - Get out Vehicle
+  - Waypoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Foot Rambo
+  - Bullet Enemy
+  - Obstacle
+  - Effect On Canvas
+  - Body Rambo
+  - Detect Body Rambo
+  - Vehicle Enemy
+  - Bullet Rambo
+  - Body Enemy
+  - Detect Body Enemy
+  - Grenade Rambo
+  - Grenade Enemy
+  - Foot Enemy
+  - Item Drop
+  - Collideable
+  - Game
+  - ScreenOverlay
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3360406633
+    locked: 0
+  - name: Foreground
+    uniqueID: 600493933
+    locked: 0
+  - name: GamePlay
+    uniqueID: 2349758045
+    locked: 0
+  - name: UI Menu TOP
+    uniqueID: 43729641
+    locked: 0
+  - name: TopLayer
+    uniqueID: 608303907
+    locked: 0
+  - name: Game
+    uniqueID: 2182433557
+    locked: 0
+  - name: UI
+    uniqueID: 2940617059
+    locked: 0
+  - name: ScreenOverlay
+    uniqueID: 1882115267
+    locked: 0
