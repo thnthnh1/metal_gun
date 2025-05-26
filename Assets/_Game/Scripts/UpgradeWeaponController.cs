@@ -382,7 +382,7 @@ public class UpgradeWeaponController : MonoBehaviour, IEnhancedScrollerDelegate
 			this.UpdateMeleeWeaponPrice(data3);
 		}
 
-		Mp_Armory.instance.RefreshRifleWeaponMP();
+		//Mp_Armory.instance.RefreshRifleWeaponMP();
 	}
 
 	private void HideAllButtonsBuy()

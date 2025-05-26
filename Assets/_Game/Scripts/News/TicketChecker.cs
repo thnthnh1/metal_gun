@@ -116,7 +116,7 @@ public class TicketChecker : MonoBehaviour
 
 					StartCoroutine(CountTimer());
 
-					Mp_Armory.instance.RefreshTickets();
+					//Mp_Armory.instance.RefreshTickets();
 				}
 			});
 		}
@@ -141,7 +141,7 @@ public class TicketChecker : MonoBehaviour
 				timer = 3600;
 				GameData.playerResources.ReceiveTournamentTicket(1);
 
-				Mp_Armory.instance.RefreshTickets();
+				//Mp_Armory.instance.RefreshTickets();
 			}	
 
 		

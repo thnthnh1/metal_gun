@@ -252,7 +252,7 @@ public class ShopIAP : Singleton<ShopIAP>
                 GameData.playerResources.ReceiveTournamentTicket(ticket);
                 SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
 
-                Mp_Armory.instance.RefreshTickets();
+                //Mp_Armory.instance.RefreshTickets();
             }, null);
         }
         else

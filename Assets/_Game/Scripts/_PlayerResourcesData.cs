@@ -121,13 +121,13 @@ public class _PlayerResourcesData
 		if (value > 0)
 		{
 			this.tournamentTicket += value;
-			if (Mp_Armory.instance)
+			/*if (Mp_Armory.instance)
 			{
 				if (Mp_Armory.instance.tourTicket)
 				{
 					Mp_Armory.instance.tourTicket.text = GameData.playerResources.tournamentTicket + " / " + 5;
 				}
-			}
+			}*/
 			EventDispatcher.Instance.PostEvent(EventID.ReceiveTicket, value);
 			this.Save();
 		}
@@ -142,13 +142,13 @@ public class _PlayerResourcesData
 			{
 				this.tournamentTicket = 0;
 			}
-			if (Mp_Armory.instance)
+			/*if (Mp_Armory.instance)
 			{
 				if (Mp_Armory.instance.tourTicket)
 				{
 					Mp_Armory.instance.tourTicket.text = GameData.playerResources.tournamentTicket + " / " + 5;
 				}
-			}
+			}*/
 			EventDispatcher.Instance.PostEvent(EventID.ConsumeTicket, value);
 			this.Save();
 		}

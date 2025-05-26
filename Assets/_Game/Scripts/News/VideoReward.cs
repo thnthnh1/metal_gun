@@ -110,7 +110,7 @@ public class VideoReward : MonoBehaviour {
             ticketsReward = 0;
         }
 
-        Mp_Armory.instance.RefreshTickets();
+        //Mp_Armory.instance.RefreshTickets();
 
         Invoke("LoadRewardVideo", 5f);
 

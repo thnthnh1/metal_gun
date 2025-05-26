@@ -8,14 +8,14 @@ public class OnlyMainMenuTutorial : MonoBehaviour
     void Start()
     {
 
-        if (PlayerPrefs.GetInt("Tutotial") == 0)
+        /*if (PlayerPrefs.GetInt("Tutotial") == 0)
         {
             Mp_Armory.instance.Tutorial.SetActive(true);
         }
         else if (PlayerPrefs.GetInt("AfterTutotial") == 0)
         {
             Mp_Armory.instance.AfterTutorial[0].SetActive(true);
-        }
+        }*/
     }
 
     // Update is called once per frame

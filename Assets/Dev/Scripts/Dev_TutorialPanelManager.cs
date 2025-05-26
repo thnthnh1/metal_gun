@@ -27,7 +27,7 @@ public class Dev_TutorialPanelManager : MonoBehaviour
         Debug.Log("<color=red>Nik Log is the Tutorial Enter </color>");
         if (listOfTutorialSprites.Count - 1 == currentImageIndex)
         {
-            Mp_Armory.instance.OtherTutorial.SetActive(true);
+            //Mp_Armory.instance.OtherTutorial.SetActive(true);
             PlayerPrefs.SetInt("NotifyTutorial", 1);
             PlayerPrefs.Save();
             if (FindObjectOfType<MainMenuAnimationEvent>())
