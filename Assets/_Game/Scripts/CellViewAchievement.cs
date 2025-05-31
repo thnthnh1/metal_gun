@@ -2,6 +2,7 @@ using EnhancedUI.EnhancedScroller;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CellViewAchievement : EnhancedScrollerCellView
 {
@@ -9,9 +10,9 @@ public class CellViewAchievement : EnhancedScrollerCellView
 
 	public Text textDescription;
 
-	public Text textProgress;
+	public TextMeshProUGUI textProgress;
 
-	public Text textTarget;
+	public TextMeshProUGUI textTarget;
 
 	public Image imageProgress;
 
@@ -32,7 +33,7 @@ public class CellViewAchievement : EnhancedScrollerCellView
 	private void UpdateInformation()
 	{
 		this.textTitle.text = this._data.title.ToUpper();
-		this.textDescription.text = this._data.description;
+		this.textDescription.text = this._data.description.ToUpper();
 		for (int i = 0; i < this.rewardCells.Length; i++)
 		{
 			RewardElement rewardElement = this.rewardCells[i];
@@ -59,8 +60,8 @@ public class CellViewAchievement : EnhancedScrollerCellView
 			this.btnClaim.gameObject.SetActive(false);
 			this.imageProgress.transform.parent.gameObject.SetActive(true);
 			this.imageProgress.fillAmount = Mathf.Clamp01((float)this._data.progress / (float)this._data.target);
-			this.textProgress.text = this._data.progress.ToString("n0");
-			this.textTarget.text = this._data.target.ToString("n0");
+			this.textProgress.text = string.Format("<color=yellow>{0}</color>/{1}", this._data.progress, this._data.target);
+			//this.textTarget.text = this._data.target.ToString("n0").ToUpper();
 		}
 	}
 

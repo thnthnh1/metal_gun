@@ -247,7 +247,7 @@ public class HudSelectBooster : MonoBehaviour
 	private void SetStageInfo()
 	{
 		this.textStageNameId.text = string.Format("STAGE {0}", GameData.currentStage.id);
-		this.textDifficulty.text = GameData.currentStage.difficulty.ToString();
+		this.textDifficulty.text = GameData.currentStage.difficulty.ToString().ToUpper();
 		Difficulty difficulty = GameData.currentStage.difficulty;
 		if (difficulty != Difficulty.Normal)
 		{
