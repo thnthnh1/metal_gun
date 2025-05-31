@@ -178,7 +178,7 @@ public class UpgradeSoldierController : MonoBehaviour
 	{
 		if (GameData.playerResources.gem >= COST_RAMBO_1)
 		{
-			Singleton<Popup>.Instance.Show(string.Format("Would you like to buy this hero by <color=#00ffffff>{0:n0}</color> gems?", COST_RAMBO_1), "confirmation", PopupType.YesNo, delegate
+			Singleton<Popup>.Instance.Show(string.Format("Would you like to buy this hero by <color=#00ffffff>{0:n0}</color> gems?", COST_RAMBO_1), PopupTitleID.Confirmation, PopupType.YesNo, delegate
 			{
 				GameData.playerResources.ConsumeGem(COST_RAMBO_1);
 
@@ -191,7 +191,7 @@ public class UpgradeSoldierController : MonoBehaviour
 		}
 		else
 		{
-			Singleton<Popup>.Instance.Show(string.Format("Not enough gems, would you like to buy some?", new object[0]), "confirmation", PopupType.YesNo, delegate
+			Singleton<Popup>.Instance.Show(string.Format("Not enough gems, would you like to buy some?", new object[0]), PopupTitleID.Confirmation, PopupType.YesNo, delegate
 			{
 				MainMenu.instance.ShowBuyGemPack();
 			}, null);

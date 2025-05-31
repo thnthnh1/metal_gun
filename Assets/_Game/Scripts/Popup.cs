@@ -96,6 +96,11 @@ public class Popup : Singleton<Popup>
 
     public void Show(string content, string title = "NOTICE", PopupType type = PopupType.Ok, UnityAction yesCallback = null, UnityAction noCallback = null)
     {
+        foreach (var image in this.imageTitles)
+        {
+            image.gameObject.SetActive(false);
+        }
+
         this.textContent.text = content.ToUpper();
         this.textTitle.gameObject.SetActive(true);
         this.textTitle.text = title.ToUpper();
@@ -113,6 +118,11 @@ public class Popup : Singleton<Popup>
 
     public void Show(string content, PopupTitleID titleId, PopupType type = PopupType.Ok, UnityAction yesCallback = null, UnityAction noCallback = null)
     {
+        foreach (var image in this.imageTitles)
+        {
+            image.gameObject.SetActive(false);
+        }
+
         this.textContent.text = content.ToUpper();
         this.textTitle.gameObject.SetActive(false);
         this.imageTitles[(int)titleId].gameObject.SetActive(true);

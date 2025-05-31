@@ -217,7 +217,7 @@ public class Setting : MonoBehaviour
 	public void RestoreData()
 	{
 		this.Hide();
-		Singleton<Popup>.Instance.Show("Do you want to replace current game data with previous one?", "CONFIRMATION", PopupType.YesNo, delegate
+		Singleton<Popup>.Instance.Show("Do you want to replace current game data with previous one?", PopupTitleID.Confirmation, PopupType.YesNo, delegate
 		{
 			Singleton<Popup>.Instance.ShowInstantLoading(15);
 			/*

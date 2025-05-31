@@ -132,7 +132,7 @@ public class ShopIAP : Singleton<ShopIAP>
         }
         if (GameData.playerResources.medal >= medal)
         {
-            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#ffff00ff>{0:n0}</color> medal to <color=#ffff00ff>{1:n0}</color> coins?", medal, coin), "confirmation", PopupType.YesNo, delegate
+            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#ffff00ff>{0:n0}</color> medal to <color=#ffff00ff>{1:n0}</color> coins?", medal, coin), PopupTitleID.Confirmation, PopupType.YesNo, delegate
             {
                 GameData.playerResources.ConsumeMedal(medal);
                 GameData.playerResources.ReceiveCoin(coin);
@@ -195,7 +195,7 @@ public class ShopIAP : Singleton<ShopIAP>
 
         if (GameData.playerResources.gem >= gem)
         {
-            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#00ffffff>{0:n0}</color> gems to <color=#ffff00ff>{1:n0}</color> coins?", gem, coin), "confirmation", PopupType.YesNo, delegate
+            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#00ffffff>{0:n0}</color> gems to <color=#ffff00ff>{1:n0}</color> coins?", gem, coin), PopupTitleID.Confirmation, PopupType.YesNo, delegate
             {
                 GameData.playerResources.ConsumeGem(gem);
                 GameData.playerResources.ReceiveCoin(coin);
@@ -208,7 +208,7 @@ public class ShopIAP : Singleton<ShopIAP>
         }
         else
         {
-            Singleton<Popup>.Instance.Show(string.Format("not enough gems, would you like to buy some?", new object[0]), "confirmation", PopupType.YesNo, delegate
+            Singleton<Popup>.Instance.Show(string.Format("not enough gems, would you like to buy some?", new object[0]), PopupTitleID.Confirmation, PopupType.YesNo, delegate
             {
                 this.OpenGemShop();
             }, null);
@@ -246,7 +246,7 @@ public class ShopIAP : Singleton<ShopIAP>
 
         if (GameData.playerResources.gem >= gem)
         {
-            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#00ffffff>{0:n0}</color> gems to <color=#ffff00ff>{1:n0}</color> tickets?", gem, ticket), "confirmation", PopupType.YesNo, delegate
+            Singleton<Popup>.Instance.Show(string.Format("would you like to exchange <color=#00ffffff>{0:n0}</color> gems to <color=#ffff00ff>{1:n0}</color> tickets?", gem, ticket), PopupTitleID.Confirmation, PopupType.YesNo, delegate
             {
                 GameData.playerResources.ConsumeGem(gem);
                 GameData.playerResources.ReceiveTournamentTicket(ticket);
@@ -257,7 +257,7 @@ public class ShopIAP : Singleton<ShopIAP>
         }
         else
         {
-            Singleton<Popup>.Instance.Show(string.Format("not enough gems, would you like to buy some?", new object[0]), "confirmation", PopupType.YesNo, delegate
+            Singleton<Popup>.Instance.Show(string.Format("not enough gems, would you like to buy some?", new object[0]), PopupTitleID.Confirmation, PopupType.YesNo, delegate
             {
                 this.OpenGemShop();
             }, null);
@@ -446,12 +446,12 @@ public class ShopIAP : Singleton<ShopIAP>
 
     private void CheckLabelBonusGem()
     {
-        this.bonusGem100.SetActive(!ProfileManager.UserProfile.isFirstBuyGem100);
-        this.bonusGem300.SetActive(!ProfileManager.UserProfile.isFirstBuyGem300);
-        this.bonusGem500.SetActive(!ProfileManager.UserProfile.isFirstBuyGem500);
-        this.bonusGem1000.SetActive(!ProfileManager.UserProfile.isFirstBuyGem1000);
-        this.bonusGem2500.SetActive(!ProfileManager.UserProfile.isFirstBuyGem2500);
-        this.bonusGem5000.SetActive(!ProfileManager.UserProfile.isFirstBuyGem5000);
+        //this.bonusGem100.SetActive(!ProfileManager.UserProfile.isFirstBuyGem100);
+        //this.bonusGem300.SetActive(!ProfileManager.UserProfile.isFirstBuyGem300);
+        //this.bonusGem500.SetActive(!ProfileManager.UserProfile.isFirstBuyGem500);
+        //this.bonusGem1000.SetActive(!ProfileManager.UserProfile.isFirstBuyGem1000);
+        //this.bonusGem2500.SetActive(!ProfileManager.UserProfile.isFirstBuyGem2500);
+        //this.bonusGem5000.SetActive(!ProfileManager.UserProfile.isFirstBuyGem5000);
     }
 
     private void BuyIapSuccessCallback(string productId)
