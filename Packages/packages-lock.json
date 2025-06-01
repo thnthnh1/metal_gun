@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.ggmakers.uiframework": {
-      "version": "https://thnthnh1@github.com/thnthnh1/ggmakers_ui_framework.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "db86fcad54a86f7305a911b16d1efb51aa01a141"
-    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
