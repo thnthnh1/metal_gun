@@ -1,9 +1,9 @@
-using System;
+/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Firebase.Extensions;
-using Firebase.RemoteConfig;
+//using Firebase.Extensions;
+//using Firebase.RemoteConfig;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -251,4 +251,4 @@ public class NewbieController : MonoBehaviour
 		_popupView.SetActive(false);
 		SoundManager.Instance.PlaySfxClick();
 	}
-}
+}*/

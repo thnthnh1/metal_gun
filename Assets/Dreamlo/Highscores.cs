@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using System.Collections;
 
 public class Highscores : MonoBehaviour {
@@ -193,3 +193,4 @@ public struct Highscore
 	}
 
 }
+*/

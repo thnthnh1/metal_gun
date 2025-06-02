@@ -1,4 +1,4 @@
-using EnhancedUI;
+/*using EnhancedUI;
 using EnhancedUI.EnhancedScroller;
 using System;
 using System.Collections;
@@ -264,7 +264,7 @@ public class HudTournamentRanking : MonoBehaviour, IEnhancedScrollerDelegate, IS
 	{
 		// FacebookSDK Remove
 		UnityEngine.Debug.Log("Check Facebook Or Google SignIn");
-		if (/*!FB.IsLoggedIn &&*/ PlayerPrefs.GetInt("GoogleSignIn") == 0)
+		if (*//*!FB.IsLoggedIn &&*//* PlayerPrefs.GetInt("GoogleSignIn") == 0)
 		{
 			// UnityEngine.Debug.Log("<color>LB - Log in CheckWeek</color>" + " FB : " + FB.IsLoggedIn);
 		}
@@ -296,7 +296,7 @@ public class HudTournamentRanking : MonoBehaviour, IEnhancedScrollerDelegate, IS
 			if (!GameData.playerTournamentData.isReceivedTopRankReward)
 			{
 				//GameData.playerTournamentData.isReceivedTopRankReward = true;
-				/*
+				*//*
 				Singleton<FireBaseDatabase>.Instance.GetTopTournamentForRewarded(delegate(List<TournamentData> data)
 				{
 					bool flag = false;
@@ -318,7 +318,7 @@ public class HudTournamentRanking : MonoBehaviour, IEnhancedScrollerDelegate, IS
 						Singleton<FireBaseDatabase>.Instance.SaveTournamentReceivedReward(AccessToken.CurrentAccessToken.UserId, Singleton<MasterInfo>.Instance.GetPreviousWeekRangeString(), null);
 					}
 				});
-				*/
+				*//*
 			}
 		}
 	}
@@ -570,3 +570,4 @@ public class HudTournamentRanking : MonoBehaviour, IEnhancedScrollerDelegate, IS
 		return cellViewTournamentRank;
 	}
 }
+*/

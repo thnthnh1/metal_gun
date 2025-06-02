@@ -76,7 +76,7 @@ public class MainMenu : MonoBehaviour
             {
                 GameData.playerTournamentData.score = score;
             }
-            this._this.hudTournament.Open(this.data);
+            //this._this.hudTournament.Open(this.data);
         }
     }
 
@@ -115,7 +115,7 @@ public class MainMenu : MonoBehaviour
 
     [Header("NEWBIE PACK")]
     public Button btnNewbiePack;
-    public NewbieController newbieController;
+    //public NewbieController newbieController;
 
     [Header("SKILL")]
     public GameObject btnSkill;
@@ -140,8 +140,8 @@ public class MainMenu : MonoBehaviour
 
     public Text numberUnusedSkillPoints;
 
-    [Header("TOURNAMENT")]
-    public HudTournamentRanking hudTournament;
+    //[Header("TOURNAMENT")]
+    //public HudTournamentRanking hudTournament;
 
     public GameObject popupLoginFacebook;
 
@@ -326,11 +326,11 @@ public class MainMenu : MonoBehaviour
             this.freeGiftController.Close();
             return;
         }
-        if (this.newbieController.View.activeSelf)
+        /*if (this.newbieController.View.activeSelf)
         {
             this.newbieController.Close();
             return;
-        }
+        }*/
         if (this.panelSoldier.activeSelf)
         {
             _isOpenFromCharacter = false;
@@ -356,7 +356,7 @@ public class MainMenu : MonoBehaviour
             this.ShowMainMenu();
             return;
         }
-        if (this.hudTournament.popupRank.activeSelf)
+        /*if (this.hudTournament.popupRank.activeSelf)
         {
             this.hudTournament.Close();
             this.ShowMainMenu();
@@ -367,7 +367,7 @@ public class MainMenu : MonoBehaviour
             this.hudTournament.Close();
             this.ShowMainMenu();
             return;
-        }
+        }*/
         if (this.panelOpenchestUI.gameObject.activeSelf)
         {
             this.panelOpenchestUI.Close();
@@ -641,12 +641,12 @@ public class MainMenu : MonoBehaviour
 
     public void ShowNewbiePack(bool isShow)
     {
-        if (isShow)
+        /*if (isShow)
             this.newbieController.Open();
         else
             this.newbieController.Close();
 
-        SoundManager.Instance.PlaySfxClick();
+        SoundManager.Instance.PlaySfxClick();*/
     }
 
     public void ShowNewGiftCodeUI()
@@ -744,18 +744,18 @@ public class MainMenu : MonoBehaviour
 
     public void LoginFacebookToJoinTournament()
     {
-        this.popupLoginFacebook.SetActive(false);
+        /*this.popupLoginFacebook.SetActive(false);
         Singleton<Popup>.Instance.ShowInstantLoading(15);
         List<TournamentData> data = new List<TournamentData>();
         //data.Add(new TournamentData("1", 50, 0, true));
         this.hudTournament.Open(data);
         // FacebookSDK Remove
-        FbController.Instance.LoginWithReadPermission(new UnityAction<bool>(this.LoginFacebookCallback));
+        FbController.Instance.LoginWithReadPermission(new UnityAction<bool>(this.LoginFacebookCallback));*/
     }
 
     public void LoginGoogleToJoinTournament()
     {
-        this.popupLoginFacebook.SetActive(false);
+        /*this.popupLoginFacebook.SetActive(false);
         Singleton<Popup>.Instance.ShowInstantLoading(15);
         List<TournamentData> data = new List<TournamentData>();
         //data.Add(new TournamentData("1", 50, 0, true));
@@ -763,7 +763,7 @@ public class MainMenu : MonoBehaviour
         // GoogleController._instance.LoginWithGoogle();
         GoogleController._instance.CheckFirebaseDependencies();
         // GoogleController._instance.LoginWithGoogle(new UnityAction<bool>(this.LoginFacebookCallback));
-        // FbController.Instance.LoginWithReadPermission(new UnityAction<bool>(this.LoginFacebookCallback));
+        // FbController.Instance.LoginWithReadPermission(new UnityAction<bool>(this.LoginFacebookCallback));*/
     }
 
     private void FillTournamentData(List<TournamentData> data)

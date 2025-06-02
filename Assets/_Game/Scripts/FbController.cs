@@ -1235,7 +1235,7 @@ public class FbController : MonoBehaviour
 	// 	}
 	// }
 
-	public IEnumerator LoadImage(string url) 
+	/*public IEnumerator LoadImage(string url) 
 	{
 		WWW www = new WWW(url);
 		yield return www;
@@ -1244,7 +1244,7 @@ public class FbController : MonoBehaviour
 		// FireBase Remove
 		//write data in firebase
 		// ControllerFirebase.controllerFirebase.WriteFaceBookInfoInDatabase();
-	}
+	}*/
 
 	// private void ShareScreenshotCallback(IGraphResult result, UnityAction<bool> callback)
 	// {

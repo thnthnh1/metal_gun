@@ -165,25 +165,25 @@ public class AdmobController : Singleton<AdmobController>
 
     void Update()
     {
-        if (!ControllerFirebase.controllerFirebase)
+        /*if (!ControllerFirebase.controllerFirebase)
         {
             return;
-        }
-        if (!_initialize && ControllerFirebase.controllerFirebase._initializeData)
+        }*/
+        if (!_initialize)
         {
-            ControllerFirebase.controllerFirebase._initializeData = false;
+            //ControllerFirebase.controllerFirebase._initializeData = false;
             AdsInitialize();
         }
     }
     // public void AdsInitialize(String BannerId, String InterstitialId, String RewardedId)
     public void AdsInitialize()
     {
-        ControllerFirebase CF = ControllerFirebase.controllerFirebase;
-        if (CF.gameDetails.BannerId == null || CF.gameDetails.InterstitialId == null || CF.gameDetails.RewardedId == null)
+        //ControllerFirebase CF = ControllerFirebase.controllerFirebase;
+        /*if (CF.gameDetails.BannerId == null || CF.gameDetails.InterstitialId == null || CF.gameDetails.RewardedId == null)
         {
             Debug.Log("Nik Ads Return By empty Id");
             return;
-        }
+        }*/
 
 
         // Debug.Log("Nik Ad Id Banner : " + CF.gameDetails.BannerId + "Interstitial : " + CF.gameDetails.InterstitialId + "Rewarded : " + CF.gameDetails.RewardedId);

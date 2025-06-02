@@ -66,8 +66,8 @@ public class InstantLoading : MonoBehaviour
 			if (MainMenu.instance.IsFBLogin)
 			{
 				MainMenu.instance.IsFBLogin= false;
-				Mp_PlayerInfoScreen.instance.LoadData();
-				Launcher.launcher.OpenMultiplayerMenu();
+				//Mp_PlayerInfoScreen.instance.LoadData();
+				//Launcher.launcher.OpenMultiplayerMenu();
 			}
 			UnityEngine.Debug.Log("Nik Log is the Close Popup false");
 			this._this.gameObject.SetActive(false);

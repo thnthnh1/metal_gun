@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -671,4 +671,4 @@ public class GameDetails
     public string BannerId;
     public string InterstitialId;
     public string RewardedId;
-}
+}*/

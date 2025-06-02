@@ -250,7 +250,7 @@ public class Mp_GameController : MonoBehaviour
 			leaderBoardScreenCloseButton.SetActive(false);
 			Debug.Log("Nik Name And Score Display In Log : " + Mp_playerSettings.instance.facebookID + " : " + GameData.playerTournamentData.score + 
 			" Test Score : " + GameLeaderboard.instance.playerTrophyList[playerNumber]);// Or Mp_playerSettings.instance.trophy
-			Highscores.instance.AddNewHighscore(Mp_playerSettings.instance.facebookID, GameData.playerTournamentData.score);
+			//Highscores.instance.AddNewHighscore(Mp_playerSettings.instance.facebookID, GameData.playerTournamentData.score);
 
 			gameOver = true;
 

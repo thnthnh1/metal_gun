@@ -79,12 +79,10 @@ public class Mp_RewardsMenu : MonoBehaviour
 			gemsTournamentText.text = "" + rewards[posInLeaderBoard].diamonsReward;
 			coinsTournamentText.text = "" + rewards[posInLeaderBoard].coinsReward;
 
-			HudTournamentRanking.instance.DeleteHighscore();
-
-			Debug.Log("Nik Log Is the tournamentReward is number : " + DisplayHighscores.instance.slotNumber);
-			Debug.Log("Nik Log Is the tournamentReward is Name : " + DisplayHighscores.instance.playerName);
-			Debug.Log("Nik Log Is the tournamentReward is Trophys : " + DisplayHighscores.instance.score);
-
+			//HudTournamentRanking.instance.DeleteHighscore();
+			//Debug.Log("Nik Log Is the tournamentReward is number : " + DisplayHighscores.instance.slotNumber);
+			//Debug.Log("Nik Log Is the tournamentReward is Name : " + DisplayHighscores.instance.playerName);
+			//Debug.Log("Nik Log Is the tournamentReward is Trophys : " + DisplayHighscores.instance.score);
 
 			GameData.playerTournamentData.isReceivedTopRankReward = true;
 

@@ -375,6 +375,32 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3492413768485572662, guid: 8eb6cbf515e060c4381b3c387d735908,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 329db9c6481b4348b64728c6c4254b1a, type: 2}
+    - target: {fileID: 8609615798195982083, guid: 8eb6cbf515e060c4381b3c387d735908,
+        type: 3}
+      propertyPath: loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609615798195982083, guid: 8eb6cbf515e060c4381b3c387d735908,
+        type: 3}
+      propertyPath: _animationName
+      value: crouch3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609615798195982083, guid: 8eb6cbf515e060c4381b3c387d735908,
+        type: 3}
+      propertyPath: initialSkinName
+      value: e_map1_rifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609615798195982083, guid: 8eb6cbf515e060c4381b3c387d735908,
+        type: 3}
+      propertyPath: skeletonDataAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b67a77e8b474a218652595bf5cbff1a,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb6cbf515e060c4381b3c387d735908, type: 3}
 --- !u!1 &1790081507187849838
