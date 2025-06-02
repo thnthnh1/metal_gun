@@ -115,7 +115,7 @@ public class MainMenu : MonoBehaviour
 
     [Header("NEWBIE PACK")]
     public Button btnNewbiePack;
-    //public NewbieController newbieController;
+    public NewbieController newbieController;
 
     [Header("SKILL")]
     public GameObject btnSkill;
@@ -641,12 +641,12 @@ public class MainMenu : MonoBehaviour
 
     public void ShowNewbiePack(bool isShow)
     {
-        /*if (isShow)
+        if (isShow)
             this.newbieController.Open();
         else
             this.newbieController.Close();
 
-        SoundManager.Instance.PlaySfxClick();*/
+        SoundManager.Instance.PlaySfxClick();
     }
 
     public void ShowNewGiftCodeUI()
