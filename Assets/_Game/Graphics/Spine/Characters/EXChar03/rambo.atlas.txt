@@ -1,299 +1,257 @@
 
 rambo.png
-size: 1281,126
+size: 833,141
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Gun
-  rotate: false
-  xy: 542, 11
-  size: 102, 43
-  orig: 102, 43
-  offset: 0, 0
-  index: -1
 balo2
   rotate: false
-  xy: 766, 2
+  xy: 718, 78
   size: 59, 61
   orig: 59, 61
   offset: 0, 0
   index: -1
 banchansau
-  rotate: false
-  xy: 1192, 2
+  rotate: true
+  xy: 811, 28
   size: 24, 20
   orig: 24, 20
   offset: 0, 0
   index: -1
 banchantrc
   rotate: false
-  xy: 827, 4
+  xy: 150, 12
   size: 35, 21
   orig: 35, 21
   offset: 0, 0
   index: -1
 bantaysau
-  rotate: false
-  xy: 1040, 7
+  rotate: true
+  xy: 621, 2
   size: 26, 28
   orig: 26, 28
   offset: 0, 0
   index: -1
 bantaytrc
-  rotate: true
-  xy: 864, 2
+  rotate: false
+  xy: 347, 26
   size: 23, 25
   orig: 23, 25
   offset: 0, 0
   index: -1
 chansau
-  rotate: false
-  xy: 827, 27
+  rotate: true
+  xy: 46, 5
   size: 28, 38
   orig: 28, 38
   offset: 0, 0
   index: -1
 chansau2
   rotate: true
-  xy: 1218, 2
+  xy: 520, 4
   size: 20, 23
   orig: 20, 23
   offset: 0, 0
   index: -1
 chansau2_t
   rotate: true
-  xy: 39, 3
+  xy: 714, 2
   size: 15, 27
   orig: 15, 27
   offset: 0, 0
   index: -1
 chansau_cr
-  rotate: true
-  xy: 404, 8
+  rotate: false
+  xy: 256, 2
   size: 28, 49
   orig: 28, 49
   offset: 0, 0
   index: -1
 chansau_t
   rotate: false
-  xy: 857, 27
+  xy: 318, 13
   size: 27, 38
   orig: 27, 38
   offset: 0, 0
   index: -1
 chantrc1
   rotate: false
-  xy: 455, 6
+  xy: 2, 3
   size: 42, 30
   orig: 42, 30
   offset: 0, 0
   index: -1
 coat
-  rotate: true
-  xy: 520, 56
+  rotate: false
+  xy: 520, 26
   size: 68, 113
   orig: 68, 113
   offset: 0, 0
   index: -1
 coat2
-  rotate: true
-  xy: 635, 59
+  rotate: false
+  xy: 590, 30
   size: 65, 109
   orig: 65, 109
   offset: 0, 0
   index: -1
 dau
-  rotate: true
-  xy: 708, 9
+  rotate: false
+  xy: 779, 83
   size: 48, 56
   orig: 48, 56
   offset: 0, 0
   index: -1
 dau2
   rotate: true
-  xy: 823, 67
+  xy: 718, 19
   size: 57, 61
   orig: 57, 61
   offset: 0, 0
   index: -1
 die1
   rotate: false
-  xy: 337, 38
+  xy: 189, 53
   size: 181, 86
   orig: 181, 86
   offset: 0, 0
   index: -1
 die2
   rotate: false
-  xy: 2, 20
+  xy: 2, 35
   size: 185, 104
   orig: 185, 104
   offset: 0, 0
   index: -1
-eff/1
-  rotate: false
-  xy: 886, 37
-  size: 100, 87
-  orig: 100, 87
-  offset: 0, 0
-  index: -1
-eff/2
-  rotate: false
-  xy: 988, 37
-  size: 100, 87
-  orig: 100, 87
-  offset: 0, 0
-  index: -1
-eff/3
-  rotate: true
-  xy: 1192, 24
-  size: 100, 87
-  orig: 100, 87
-  offset: 0, 0
-  index: -1
-eff/glow
-  rotate: false
-  xy: 1090, 23
-  size: 100, 101
-  orig: 100, 101
-  offset: 0, 0
-  index: -1
-hand_l
-  rotate: true
-  xy: 131, 2
-  size: 16, 13
-  orig: 16, 13
-  offset: 0, 0
-  index: -1
 mat
   rotate: false
-  xy: 952, 7
+  xy: 781, 53
   size: 28, 28
   orig: 28, 28
   offset: 0, 0
   index: -1
 mat2
   rotate: false
-  xy: 982, 7
+  xy: 781, 23
   size: 28, 28
   orig: 28, 28
   offset: 0, 0
   index: -1
 mat3
   rotate: true
-  xy: 1068, 8
+  xy: 811, 54
   size: 27, 20
   orig: 27, 20
   offset: 0, 0
   index: -1
 mieng1
   rotate: true
-  xy: 146, 2
+  xy: 384, 2
   size: 16, 11
   orig: 16, 11
   offset: 0, 0
   index: -1
 mieng2
   rotate: false
-  xy: 111, 5
+  xy: 209, 2
   size: 18, 13
   orig: 18, 13
   offset: 0, 0
   index: -1
 mieng3
   rotate: false
-  xy: 89, 5
+  xy: 187, 2
   size: 20, 13
   orig: 20, 13
   offset: 0, 0
   index: -1
 mieng4
-  rotate: true
-  xy: 173, 4
+  rotate: false
+  xy: 318, 2
   size: 14, 9
   orig: 14, 9
   offset: 0, 0
   index: -1
 mieng5
   rotate: false
-  xy: 68, 3
+  xy: 743, 2
   size: 19, 15
   orig: 19, 15
   offset: 0, 0
   index: -1
 mouth_glove
   rotate: false
-  xy: 2, 2
+  xy: 347, 2
   size: 35, 16
   orig: 35, 16
   offset: 0, 0
   index: -1
 ngontay
   rotate: true
-  xy: 1243, 3
+  xy: 781, 2
   size: 19, 21
   orig: 19, 21
   offset: 0, 0
   index: -1
 ngontaycai
   rotate: false
-  xy: 159, 4
+  xy: 764, 3
   size: 12, 14
   orig: 12, 14
   offset: 0, 0
   index: -1
 parachute
   rotate: false
-  xy: 189, 5
+  xy: 372, 20
   size: 146, 119
   orig: 146, 119
   offset: 0, 0
   index: -1
 rope
-  rotate: false
-  xy: 1012, 6
+  rotate: true
+  xy: 590, 2
   size: 26, 29
   orig: 26, 29
   offset: 0, 0
   index: -1
 taysau1_new
-  rotate: true
-  xy: 646, 2
+  rotate: false
+  xy: 657, 2
   size: 55, 60
   orig: 55, 60
   offset: 0, 0
   index: -1
 taysau2_new
   rotate: false
-  xy: 922, 6
+  xy: 120, 4
   size: 28, 29
   orig: 28, 29
   offset: 0, 0
   index: -1
 taysau2c
   rotate: true
-  xy: 337, 2
+  xy: 189, 17
   size: 34, 65
   orig: 34, 65
   offset: 0, 0
   index: -1
 taytrc1
-  rotate: true
-  xy: 499, 6
+  rotate: false
+  xy: 286, 10
   size: 30, 41
   orig: 30, 41
   offset: 0, 0
   index: -1
 taytrc2
-  rotate: true
-  xy: 891, 3
+  rotate: false
+  xy: 86, 4
   size: 32, 29
   orig: 32, 29
   offset: 0, 0
   index: -1
 than1
-  rotate: true
-  xy: 746, 65
+  rotate: false
+  xy: 657, 64
   size: 59, 75
   orig: 59, 75
   offset: 0, 0
