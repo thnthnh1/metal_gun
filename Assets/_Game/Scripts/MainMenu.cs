@@ -140,6 +140,9 @@ public class MainMenu : MonoBehaviour
 
     public Text numberUnusedSkillPoints;
 
+    [Header("CHARACTER INFO")]
+    public CharacterNameUI characterNamePanel;
+
     //[Header("TOURNAMENT")]
     //public HudTournamentRanking hudTournament;
 
@@ -250,7 +253,19 @@ public class MainMenu : MonoBehaviour
         this.ShowClaimHero();
         Singleton<Popup>.Instance.setting.AutoBackupData();
         switchCharacterButton.UpdateText();
+
+        checkCharacterNameUI();
     }
+
+    private void checkCharacterNameUI()
+    {
+        string playerName = PlayerPrefs.GetString("playername", null);
+        if (string.IsNullOrEmpty(playerName))
+        {
+            characterNamePanel.Show();
+        }
+    }
+
     private void Update()
     {
         if (UnityEngine.Input.GetKeyUp(KeyCode.Escape))

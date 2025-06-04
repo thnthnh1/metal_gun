@@ -1665,6 +1665,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2890930772653957746}
     m_Modifications:
+    - target: {fileID: 8694241495006861863, guid: 822f3a9faa8d4df4b9342271c7ade079,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 15831dc871749bf40b16b57d7d0f4790,
+        type: 3}
+    - target: {fileID: 8694241495006861863, guid: 822f3a9faa8d4df4b9342271c7ade079,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8694241495006862471, guid: 822f3a9faa8d4df4b9342271c7ade079,
         type: 3}
       propertyPath: m_Name
@@ -1674,6 +1685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694241495006862732, guid: 822f3a9faa8d4df4b9342271c7ade079,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.7
       objectReference: {fileID: 0}
     - target: {fileID: 8694241495006862744, guid: 822f3a9faa8d4df4b9342271c7ade079,
         type: 3}

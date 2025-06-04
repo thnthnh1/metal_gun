@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class NewbieController : MonoBehaviour
 {
-	const string KEY_NEWBIE_CODE = "metalgun4";
+	const string KEY_NEWBIE_CODE = "metalx";
 	[SerializeField] GameObject _popupView;
 	[SerializeField] TMP_InputField _inputCode;
 	[SerializeField] Button _btnClaim;
