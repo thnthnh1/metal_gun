@@ -28,7 +28,7 @@ public class VideoReward : MonoBehaviour {
     {
         coinsReward = value;
         ticketsReward = 0;
-        // AdMob Remove
+        /*// AdMob Remove
         Singleton<AdmobController>.Instance.ShowRewardedVideoAd(delegate(ShowResult showResult)
 		{
 			if (showResult == ShowResult.Finished)
@@ -41,7 +41,9 @@ public class VideoReward : MonoBehaviour {
 			{
 				UnityEngine.Debug.Log("NIk Log is the Reward Fail");
 			}
-		});
+		});*/
+
+        Invoke("DelayReward", 0.1f);
     }
 
     public void DelayReward()

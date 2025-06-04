@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 public class AdUtils
 {
@@ -18,3 +18,4 @@ public class AdUtils
 		Singleton<AdmobController>.Instance.ShowInterstitialAd(null);
 	}
 }
+*/

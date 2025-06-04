@@ -127,7 +127,7 @@ public class HudSaveMe : MonoBehaviour
 	public void WatchAdsToRevive()
 	{
 		SoundManager.Instance.PlaySfxClick();
-		this.btnWatchAds.interactable = false;
+		/*this.btnWatchAds.interactable = false;
 		// AdMob Remove
 		Singleton<AdmobController>.Instance.ShowRewardedVideoAd(delegate(ShowResult showResult)
 		{
@@ -146,7 +146,7 @@ public class HudSaveMe : MonoBehaviour
 				this.btnWatchAds.interactable = true;
 			}
 			base.StopAllCoroutines();
-		});
+		});*/
 	}
 
 	public void DelayReward()

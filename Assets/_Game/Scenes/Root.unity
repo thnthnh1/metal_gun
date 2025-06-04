@@ -525,7 +525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1790081507187849908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1371,22 @@ MonoBehaviour:
     type: 3}
   InterstitialObject: {fileID: 0}
   RewardVideoObject: {fileID: 0}
+  didClose: 0
+  isLoaded: 0
+  isLoadedVideo: 0
+  didCloseVideo: 0
+  isBannerAdLoaded: 0
+  isInterstitialAdLoading: 0
+  isRewardedAdsLoaded: 0
+  isRewardedAdLoading: 0
+  tryLoadBannerCount: 0
+  tryLoadVideoCount: 0
+  tryLoadInterstitialCount: 0
   isAdRewarded: 0
+  userConsent: 0
+  DefaultBannerID: ca-app-pub-7937098131590091/4576915233
+  DefaultInterstitialID: ca-app-pub-7937098131590091/1675102496
+  DefaultRewardvideoID: ca-app-pub-7937098131590091/1950751897
   _initialize: 0
 --- !u!114 &1790081507187850305
 MonoBehaviour:

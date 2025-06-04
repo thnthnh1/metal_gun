@@ -82,7 +82,7 @@ public class HudWin : MonoBehaviour
 	public void WatchAdsX2Reward()
 	{
 		SoundManager.Instance.PlaySfxClick();
-		this.btnWatchAds.interactable = false;
+		/*this.btnWatchAds.interactable = false;
 		// AdMob Remove
 		Singleton<AdmobController>.Instance.ShowRewardedVideoAd(delegate(ShowResult showResult)
 		{
@@ -98,7 +98,7 @@ public class HudWin : MonoBehaviour
 			{
 				this.btnWatchAds.interactable = true;
 			}
-		});
+		});*/
 	}
 
 	public void DelayReward()

@@ -1,4 +1,4 @@
-using GoogleMobileAds.Api;
+/*using GoogleMobileAds.Api;
 using GoogleMobileAds;
 using System;
 using UnityEngine;
@@ -165,10 +165,10 @@ public class AdmobController : Singleton<AdmobController>
 
     void Update()
     {
-        /*if (!ControllerFirebase.controllerFirebase)
+        *//*if (!ControllerFirebase.controllerFirebase)
         {
             return;
-        }*/
+        }*//*
         if (!_initialize)
         {
             //ControllerFirebase.controllerFirebase._initializeData = false;
@@ -179,11 +179,11 @@ public class AdmobController : Singleton<AdmobController>
     public void AdsInitialize()
     {
         //ControllerFirebase CF = ControllerFirebase.controllerFirebase;
-        /*if (CF.gameDetails.BannerId == null || CF.gameDetails.InterstitialId == null || CF.gameDetails.RewardedId == null)
+        *//*if (CF.gameDetails.BannerId == null || CF.gameDetails.InterstitialId == null || CF.gameDetails.RewardedId == null)
         {
             Debug.Log("Nik Ads Return By empty Id");
             return;
-        }*/
+        }*//*
 
 
         // Debug.Log("Nik Ad Id Banner : " + CF.gameDetails.BannerId + "Interstitial : " + CF.gameDetails.InterstitialId + "Rewarded : " + CF.gameDetails.RewardedId);
@@ -1111,3 +1111,4 @@ public class AdmobController : Singleton<AdmobController>
     // #endregion 
 
 }
+*/
