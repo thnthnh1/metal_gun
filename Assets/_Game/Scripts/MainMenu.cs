@@ -259,7 +259,7 @@ public class MainMenu : MonoBehaviour
 
     private void checkCharacterNameUI()
     {
-        string playerName = PlayerPrefs.GetString("playername", null);
+        string playerName = PlayerPrefs.GetString("playerName", null);
         if (string.IsNullOrEmpty(playerName))
         {
             characterNamePanel.Show();

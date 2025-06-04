@@ -18,6 +18,7 @@ public class CharacterNameUI : MonoBehaviour
         if (!string.IsNullOrEmpty(_inputField.text))
         {
             PlayerPrefs.SetString("playerName", _inputField.text);
+            PlayerPrefs.Save();
             gameObject.SetActive(false);
         }
     }

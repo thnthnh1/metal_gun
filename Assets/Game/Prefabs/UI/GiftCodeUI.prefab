@@ -1958,7 +1958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use code metalgun4 to get rewards
+  m_text: Use code metalx to get rewards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c0fd9b59209f444d97bbbb9cb420c24, type: 2}
   m_sharedMaterial: {fileID: 2428272990149030079, guid: 5c0fd9b59209f444d97bbbb9cb420c24,
