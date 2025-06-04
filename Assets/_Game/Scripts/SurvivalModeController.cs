@@ -448,11 +448,11 @@ public class SurvivalModeController : BaseModeController
 			//Singleton<FireBaseDatabase>.Instance.SaveTournamentData(data2, null);
 		}
 		Singleton<UIController>.Instance.hudSurvivalResult.Open(data);
-		if (!ProfileManager.UserProfile.isRemoveAds)
+		/*if (!ProfileManager.UserProfile.isRemoveAds)
 		{
 			// AdMob Remove
 			Singleton<AdmobController>.Instance.ShowRewardedVideoAd(null);
-		}
+		}*/
 		EventDispatcher.Instance.PostEvent(EventID.CompleteSurvivalSession);
 		EventLogger.LogEvent("N_CompleteSurvival", new object[]
 		{

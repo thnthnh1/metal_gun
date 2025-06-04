@@ -11,6 +11,8 @@ public class CellViewFreeGift : MonoBehaviour
 {
 	private sealed class _StartCountDown_c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object>
 	{
+		internal int _hour__1;
+
 		internal int _min___1;
 
 		internal int _sec___1;
@@ -69,9 +71,19 @@ public class CellViewFreeGift : MonoBehaviour
 			}
 			if (_duration > 0)
 			{
-				this._min___1 = _duration / 60;
-				this._sec___1 = _duration % 60;
-				this._this.countDown.text = string.Format("{0:D2}:{1:D2}", this._min___1, this._sec___1);
+				TimeSpan ts = TimeSpan.FromSeconds(_duration);
+
+				this._hour__1 = ts.Hours;
+				this._min___1 = ts.Minutes;
+				this._sec___1 = ts.Seconds;
+				if (this._hour__1 > 0)
+                {
+					this._this.countDown.text = string.Format("{0:D2}:{1:D2}:{2:D2}", this._hour__1, this._min___1, this._sec___1);
+				}
+				else
+                {
+					this._this.countDown.text = string.Format("{0:D2}:{1:D2}", this._min___1, this._sec___1);
+				}
 				this._current = StaticValue.waitOneSec;
 				if (!this._disposing)
 				{
@@ -199,7 +211,7 @@ public class CellViewFreeGift : MonoBehaviour
 		// }
 		// AdMob Remove
 
-		if (Singleton<AdmobController>.Instance.IsRewardedAdLoaded())
+		/*if (Singleton<AdmobController>.Instance.IsRewardedAdLoaded())
 		{
 			Singleton<AdmobController>.Instance.ShowRewardedVideoAd(delegate (ShowResult showResult)
 			{
@@ -223,18 +235,24 @@ public class CellViewFreeGift : MonoBehaviour
 			Singleton<Popup>.Instance.Show("Video Ad is not ready!\nPlease retry later.", "Video Ad", PopupType.Ok, delegate
 			{
 			}, null);
-		}
+		}*/
+		DelayReward();
 	}
 
 	public void DelayReward()
 	{
+		if (durationNextGift > 0)
+        {
+			return;
+        }
+
 		int num = ProfileManager.UserProfile.countViewAdsFreeCoin;
 		num++;
 		ProfileManager.UserProfile.countViewAdsFreeCoin.Set(num);
 		RewardUtils.Receive(this._rewardData);
 		Singleton<Popup>.Instance.ShowReward(this._rewardData, null, null);
 		// GameData.durationNextGift = 10; // origina it was 10 sec
-		durationNextGift = (idGift + 1) * 3 * 60; // now new one is added by hardik 1 min
+		durationNextGift = getGiftDuration(idGift); // now new one is added by hardik 1 min
 
 		var nextDate = System.DateTime.Now.AddSeconds(durationNextGift);
 		ProfileManager.UserProfile.timestampNextFreeGifts[idGift].Set(nextDate.ToUnixTime());
@@ -245,6 +263,27 @@ public class CellViewFreeGift : MonoBehaviour
 			this.idGift + 1
 		});
 	}
+
+	private int getGiftDuration(int id)
+    {
+		switch (id)
+        {
+			case 0:
+				return 5 * 60;
+			case 1:
+				return 15 * 60;
+			case 2:
+				return 30 * 60;
+			case 3:
+				return 60 * 60;
+			case 4:
+				return 120 * 60;
+			case 5:
+				return 360 * 60;
+			default:
+				return 720 * 60;
+		}
+    }
 
 	private IEnumerator StartCountDown(Action callback)
 	{
