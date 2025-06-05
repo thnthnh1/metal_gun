@@ -1357,37 +1357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ecccd52b8321f42662c389364d5b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useBanner: 0
-  useInterstital: 1
-  useRewarded: 1
-  retryLoad: 2
-  androidAppId: ca-app-pub-7937098131590091~3687501246
-  iosAppId: ca-app-pub-7937098131590091~2925104369
-  facebookInterstitial: 2599466807037610_2600482986935992
-  facebookRewardVideo: 2599466807037610_2599468643704093
-  InterstitialPrefab: {fileID: 2612650942607403542, guid: a9c4f8e4eded14047ab512bdb3534765,
-    type: 3}
-  RewardVideoPrefab: {fileID: 5367663829040709715, guid: 8e169c7a088cb43eeb9a54729ba5302b,
-    type: 3}
-  InterstitialObject: {fileID: 0}
-  RewardVideoObject: {fileID: 0}
-  didClose: 0
-  isLoaded: 0
-  isLoadedVideo: 0
-  didCloseVideo: 0
-  isBannerAdLoaded: 0
-  isInterstitialAdLoading: 0
-  isRewardedAdsLoaded: 0
-  isRewardedAdLoading: 0
-  tryLoadBannerCount: 0
-  tryLoadVideoCount: 0
-  tryLoadInterstitialCount: 0
-  isAdRewarded: 0
-  userConsent: 0
-  DefaultBannerID: ca-app-pub-7937098131590091/4576915233
-  DefaultInterstitialID: ca-app-pub-7937098131590091/1675102496
-  DefaultRewardvideoID: ca-app-pub-7937098131590091/1950751897
-  _initialize: 0
 --- !u!114 &1790081507187850305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,6 +1522,11 @@ PrefabInstance:
     - target: {fileID: 2890930772653957746, guid: aa3850a6bc16fbe49a6924dea511aa62,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890930772653957903, guid: aa3850a6bc16fbe49a6924dea511aa62,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2890930772653958006, guid: aa3850a6bc16fbe49a6924dea511aa62,
