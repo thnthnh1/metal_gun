@@ -254,15 +254,15 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 1
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/macos/Documents/Startup/meta_slugs/android_release/metal.keystore
-  AndroidKeyaliasName: metal
+  AndroidKeystoreName: '{inproject}: Keystore/m2dev.keystore'
+  AndroidKeyaliasName: m2dev
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -871,11 +871,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a66ef238-20b3-4a92-afd9-5065d8457f78
+  cloudProjectId: 300feef2-69b1-4b35-9963-1df050123909
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Gym Defense
-  organizationId: devmurari
+  projectName: Metal Shooter X
+  organizationId: unity_xtixch5efrfjda
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
