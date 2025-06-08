@@ -8,6 +8,38 @@ public class DailyChecker : MonoBehaviour
 	{
 		if (!this.alreadyCheck)
 		{
+			this.alreadyCheck = true;
+			DateTime dateTime = DateTime.UtcNow;
+			DateTime dateTime2 = ProfileManager.UserProfile.dateLastLogin;
+			if (dateTime.Day != dateTime2.Day || dateTime.Year != dateTime2.Year)
+			{
+				ProfileManager.UserProfile.countViewAdsFreeCoin.Set(0);
+				ProfileManager.UserProfile.countShareFacebook.Set(0);
+				ProfileManager.UserProfile.countPlayTournament.Set(0);
+				ProfileManager.UserProfile.countRewardInterstitialAds.Set(0);
+				ProfileManager.UserProfile.dateLastLogin.Set(dateTime);
+				GameData.playerResources.ResetTicketNewday();
+				if (ProfileManager.UserProfile.getDailyGiftDay > 7 && ProfileManager.UserProfile.isReceivedDailyGiftToday)
+				{
+					ProfileManager.UserProfile.getDailyGiftDay.Set(1);
+					if (!ProfileManager.UserProfile.isPassFirstWeek)
+					{
+						ProfileManager.UserProfile.isPassFirstWeek.Set(true);
+					}
+				}
+				ProfileManager.UserProfile.isReceivedDailyGiftToday.Set(false);
+				EventDispatcher.Instance.PostEvent(EventID.NewDay, dateTime);
+			}
+			EventDispatcher.Instance.PostEvent(EventID.CheckTimeNewDayDone);
+		}
+		else
+		{
+			EventDispatcher.Instance.PostEvent(EventID.CheckTimeNewDayDone);
+		}
+
+
+		/*if (!this.alreadyCheck)
+		{
 			Singleton<MasterInfo>.Instance.StartGetData(false, delegate (MasterInfoResponse response)
 			{
 				if (response != null)
@@ -50,6 +82,6 @@ public class DailyChecker : MonoBehaviour
 		else
 		{
 			EventDispatcher.Instance.PostEvent(EventID.CheckTimeNewDayDone);
-		}
+		}*/
 	}
 }
