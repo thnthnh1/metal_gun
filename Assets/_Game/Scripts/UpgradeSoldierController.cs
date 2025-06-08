@@ -54,6 +54,7 @@ public class UpgradeSoldierController : MonoBehaviour
 		this.UpdateRamboInfomation();
 		this.UpdateCharacters();
 		this.CheckTutorial();
+		this.RefreshUI();
 	}
 
 	private void CheckTutorial()
@@ -98,6 +99,7 @@ public class UpgradeSoldierController : MonoBehaviour
 		GameData.playerRambos.IncreaseRamboLevel(this.SelectingRamboId);
 		this.UpdateRamboInfomation();
 		this.UpdateCharacters();
+		this.RefreshUI();
 
 		if (GameData.isShowingTutorial && GameData.playerRambos.GetRamboLevel(this.SelectingRamboId) == 2)
 		{
@@ -145,6 +147,12 @@ public class UpgradeSoldierController : MonoBehaviour
 		this.CheckNotification();
 	}
 
+	public void RefreshUI()
+    {
+		int ramboLevel = GameData.playerRambos.GetRamboLevel(this.SelectingRamboId);
+		_btnUpgrade.SetActive(!_btnTakeGift.activeSelf & ramboLevel < 10);
+	}
+
 	public void UpdateCharacters()
 	{
 		for (int i = 0; i < _tfCharacters.Length; i++)
@@ -165,6 +173,7 @@ public class UpgradeSoldierController : MonoBehaviour
 		this.SelectingRamboId = id;
 		this.UpdateRamboInfomation();
 		this.UpdateCharacters();
+		this.RefreshUI();
 
 		if (GameData.playerRambos[SelectingRamboId].state == PlayerRamboState.Unlock)
 		{
@@ -185,6 +194,7 @@ public class UpgradeSoldierController : MonoBehaviour
 				GameData.playerRambos[SelectingRamboId].state = PlayerRamboState.Unlock;
 				GameData.playerRambos.Save();
 				this.UpdateRamboInfomation();
+				this.RefreshUI();
 
 				SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
 			}, null);
