@@ -885,6 +885,10 @@ public class Rambo_0 : Rambo
 
 	public override void TakeDamage(AttackData attackData)
 	{
+#if CHEAT_ENABLED
+		attackData.damage = 0;
+#endif
+
 		if (this.isDead || attackData.attacker.isDead)
 		{
 			return;

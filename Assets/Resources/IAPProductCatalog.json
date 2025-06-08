@@ -4,7 +4,7 @@
     "enableCodelessAutoInitialization": false,
     "products": [
         {
-            "id": "com.metal.gem100",
+            "id": "metal.x.gem40",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -16,12 +16,12 @@
             "applePriceTier": 0,
             "googlePrice": {
                 "data": [
-                    199,
+                    50,
                     0,
                     0,
                     131072
                 ],
-                "num": 1.99
+                "num": 0.5
             },
             "pricingTemplateID": "",
             "descriptions": [],
@@ -37,7 +37,7 @@
             "payouts": []
         },
         {
-            "id": "com.metal.gem300",
+            "id": "metal.x.gem80",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -49,12 +49,12 @@
             "applePriceTier": 0,
             "googlePrice": {
                 "data": [
-                    599,
+                    99,
                     0,
                     0,
                     131072
                 ],
-                "num": 5.99
+                "num": 0.99
             },
             "pricingTemplateID": "",
             "descriptions": [],
@@ -70,7 +70,73 @@
             "payouts": []
         },
         {
-            "id": "com.metal.gem500",
+            "id": "metal.x.gem160",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    299,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 2.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "metal.x.gem350",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    499,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 4.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "metal.x.gem700",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -103,7 +169,7 @@
             "payouts": []
         },
         {
-            "id": "com.metal.gem1000",
+            "id": "metal.x.gem1250",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -115,12 +181,12 @@
             "applePriceTier": 0,
             "googlePrice": {
                 "data": [
-                    1999,
+                    1499,
                     0,
                     0,
                     131072
                 ],
-                "num": 19.99
+                "num": 14.99
             },
             "pricingTemplateID": "",
             "descriptions": [],
@@ -136,73 +202,7 @@
             "payouts": []
         },
         {
-            "id": "com.metal.gem2500",
-            "type": 0,
-            "storeIDs": [],
-            "defaultDescription": {
-                "googleLocale": 4,
-                "title": "",
-                "description": ""
-            },
-            "screenshotPath": "",
-            "applePriceTier": 0,
-            "googlePrice": {
-                "data": [
-                    4999,
-                    0,
-                    0,
-                    131072
-                ],
-                "num": 49.99
-            },
-            "pricingTemplateID": "",
-            "descriptions": [],
-            "udpPrice": {
-                "data": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "num": 0.0
-            },
-            "payouts": []
-        },
-        {
-            "id": "com.metal.gem5000",
-            "type": 0,
-            "storeIDs": [],
-            "defaultDescription": {
-                "googleLocale": 4,
-                "title": "",
-                "description": ""
-            },
-            "screenshotPath": "",
-            "applePriceTier": 0,
-            "googlePrice": {
-                "data": [
-                    9999,
-                    0,
-                    0,
-                    131072
-                ],
-                "num": 99.99
-            },
-            "pricingTemplateID": "",
-            "descriptions": [],
-            "udpPrice": {
-                "data": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "num": 0.0
-            },
-            "payouts": []
-        },
-        {
-            "id": "com.metaltitan.battleessentials1",
+            "id": "metal.x.starterpack",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -235,7 +235,7 @@
             "payouts": []
         },
         {
-            "id": "com.metaltitan.battleessentials2",
+            "id": "metal.x.special.offer",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -247,12 +247,12 @@
             "applePriceTier": 0,
             "googlePrice": {
                 "data": [
-                    399,
+                    999,
                     0,
                     0,
                     131072
                 ],
-                "num": 3.99
+                "num": 9.99
             },
             "pricingTemplateID": "",
             "descriptions": [],
@@ -268,40 +268,7 @@
             "payouts": []
         },
         {
-            "id": "com.metaltitan.battleessentials3",
-            "type": 0,
-            "storeIDs": [],
-            "defaultDescription": {
-                "googleLocale": 4,
-                "title": "",
-                "description": ""
-            },
-            "screenshotPath": "",
-            "applePriceTier": 0,
-            "googlePrice": {
-                "data": [
-                    699,
-                    0,
-                    0,
-                    131072
-                ],
-                "num": 6.99
-            },
-            "pricingTemplateID": "",
-            "descriptions": [],
-            "udpPrice": {
-                "data": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "num": 0.0
-            },
-            "payouts": []
-        },
-        {
-            "id": "com.metaltitan.starterpack",
+            "id": "metal.x.ticket5",
             "type": 0,
             "storeIDs": [],
             "defaultDescription": {
@@ -319,6 +286,105 @@
                     131072
                 ],
                 "num": 0.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "metal.x.ticket17",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    299,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 2.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+	{
+            "id": "metal.x.ticket35",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    499,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 4.99
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+	{
+            "id": "metal.x.ticket80",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    999,
+                    0,
+                    0,
+                    131072
+                ],
+                "num": 9.99
             },
             "pricingTemplateID": "",
             "descriptions": [],

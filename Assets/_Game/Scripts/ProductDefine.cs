@@ -3,19 +3,17 @@ using UnityEngine.Purchasing;
 
 public class ProductDefine
 {
-	public static readonly ProductIAP GEM_100 = new ProductIAP("com.metal.gem100", ProductType.Consumable);
+	public static readonly ProductIAP GEM_40 = new ProductIAP("metal.x.gem40", ProductType.Consumable);
 
-	public static readonly ProductIAP GEM_300 = new ProductIAP("com.metal.gem300", ProductType.Consumable);
+	public static readonly ProductIAP GEM_80 = new ProductIAP("metal.x.gem80", ProductType.Consumable);
 
-	public static readonly ProductIAP GEM_500 = new ProductIAP("com.metal.gem500", ProductType.Consumable);
+	public static readonly ProductIAP GEM_160 = new ProductIAP("metal.x.gem160", ProductType.Consumable);
 
-	public static readonly ProductIAP GEM_1000 = new ProductIAP("com.metal.gem1000", ProductType.Consumable);
+	public static readonly ProductIAP GEM_350 = new ProductIAP("metal.x.gem350", ProductType.Consumable);
 
-	public static readonly ProductIAP GEM_2500 = new ProductIAP("com.metal.gem2500", ProductType.Consumable);
+	public static readonly ProductIAP GEM_700 = new ProductIAP("metal.x.gem700", ProductType.Consumable);
 
-	public static readonly ProductIAP GEM_5000 = new ProductIAP("com.metal.gem5000", ProductType.Consumable);
-
-
+	public static readonly ProductIAP GEM_1250 = new ProductIAP("metal.x.gem1250", ProductType.Consumable);
 
 	// Over
 
@@ -39,17 +37,19 @@ public class ProductDefine
 
 	// public static readonly ProductIAP BATTLE_ESSENTIALS_3 = new ProductIAP("com.metaltitan.battleessentials3", ProductType.Consumable);
 
-	public static readonly ProductIAP STARTER_PACK = new ProductIAP("com.metaltitan.starterpack", ProductType.Consumable);
+	public static readonly ProductIAP STARTER_PACK = new ProductIAP("metal.x.starterpack", ProductType.Consumable);
 
-	public static readonly ProductIAP REMOVE_ADS = new ProductIAP("com.metaltitan.removeads", ProductType.Consumable);
+	public static readonly ProductIAP SPECIAL_OFFER = new ProductIAP("metal.x.special.offer", ProductType.Consumable);
 
-	public static readonly ProductIAP Ticket0 = new ProductIAP("com.metal.ticket5", ProductType.Consumable);
+	public static readonly ProductIAP REMOVE_ADS = new ProductIAP("metal.x.removeads", ProductType.Consumable);
 
-	public static readonly ProductIAP Ticket1 = new ProductIAP("com.metal.ticket17", ProductType.Consumable);
+	public static readonly ProductIAP TICKET_5 = new ProductIAP("metal.x.ticket5", ProductType.Consumable);
 
-	public static readonly ProductIAP Ticket2 = new ProductIAP("com.metal.ticket35", ProductType.Consumable);
+	public static readonly ProductIAP TICKET_17 = new ProductIAP("metal.x.ticket17", ProductType.Consumable);
 
-	public static readonly ProductIAP Ticket3 = new ProductIAP("com.metal.ticket80", ProductType.Consumable);
+	public static readonly ProductIAP TICKET_35 = new ProductIAP("metal.x.ticket35", ProductType.Consumable);
+
+	public static readonly ProductIAP TICKET_80 = new ProductIAP("metal.x.ticket80", ProductType.Consumable);
 
 
 
@@ -79,21 +79,21 @@ public class ProductDefine
 
 	private static ProductIAP[] arr = new ProductIAP[]
 	{
-		ProductDefine.GEM_100,
-		ProductDefine.GEM_300,
-		ProductDefine.GEM_500,
-		ProductDefine.GEM_1000,
-		ProductDefine.GEM_2500,
-		ProductDefine.GEM_5000,
+		ProductDefine.GEM_40,
+		ProductDefine.GEM_80,
+		ProductDefine.GEM_160,
+		ProductDefine.GEM_350,
+		ProductDefine.GEM_700,
+		ProductDefine.GEM_1250,
 		// ProductDefine.BATTLE_ESSENTIALS_1,
 		// ProductDefine.BATTLE_ESSENTIALS_2,
 		// ProductDefine.BATTLE_ESSENTIALS_3,
 		ProductDefine.STARTER_PACK,
 		// ProductDefine.REMOVE_ADS,
-		ProductDefine.Ticket0,
-		ProductDefine.Ticket1,
-		ProductDefine.Ticket2,
-		ProductDefine.Ticket3,
+		ProductDefine.TICKET_5,
+		ProductDefine.TICKET_17,
+		ProductDefine.TICKET_35,
+		ProductDefine.TICKET_80,
 	};
 
 	public static ProductIAP[] GetListProducts()

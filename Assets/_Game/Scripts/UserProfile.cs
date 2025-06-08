@@ -97,17 +97,17 @@ public class UserProfile
 
 	public BoolProfileData isShowRateMap3;
 
-	public BoolProfileData isFirstBuyGem100;
+	public BoolProfileData isFirstBuyGem40;
 
-	public BoolProfileData isFirstBuyGem300;
+	public BoolProfileData isFirstBuyGem80;
 
-	public BoolProfileData isFirstBuyGem500;
+	public BoolProfileData isFirstBuyGem160;
 
-	public BoolProfileData isFirstBuyGem1000;
+	public BoolProfileData isFirstBuyGem350;
 
-	public BoolProfileData isFirstBuyGem2500;
+	public BoolProfileData isFirstBuyGem700;
 
-	public BoolProfileData isFirstBuyGem5000;
+	public BoolProfileData isFirstBuyGem1250;
 
 	public BoolProfileData isPurchasedStarterPack;
 
@@ -181,12 +181,12 @@ public class UserProfile
 		this.isShowRateMap1 = new BoolProfileData("is_show_rate_map_1", false, dataEncryption, true);
 		this.isShowRateMap2 = new BoolProfileData("is_show_rate_map_2", false, dataEncryption, true);
 		this.isShowRateMap3 = new BoolProfileData("is_show_rate_map_3", false, dataEncryption, true);
-		this.isFirstBuyGem100 = new BoolProfileData("is_first_buy_gem_100", false, dataEncryption, true);
-		this.isFirstBuyGem300 = new BoolProfileData("is_first_buy_gem_300", false, dataEncryption, true);
-		this.isFirstBuyGem500 = new BoolProfileData("is_first_buy_gem_500", false, dataEncryption, true);
-		this.isFirstBuyGem1000 = new BoolProfileData("is_first_buy_gem_1000", false, dataEncryption, true);
-		this.isFirstBuyGem2500 = new BoolProfileData("is_first_buy_gem_2500", false, dataEncryption, true);
-		this.isFirstBuyGem5000 = new BoolProfileData("is_first_buy_gem_5000", false, dataEncryption, true);
+		this.isFirstBuyGem40 = new BoolProfileData("is_first_buy_gem_100", false, dataEncryption, true);
+		this.isFirstBuyGem80 = new BoolProfileData("is_first_buy_gem_300", false, dataEncryption, true);
+		this.isFirstBuyGem160 = new BoolProfileData("is_first_buy_gem_500", false, dataEncryption, true);
+		this.isFirstBuyGem350 = new BoolProfileData("is_first_buy_gem_1000", false, dataEncryption, true);
+		this.isFirstBuyGem700 = new BoolProfileData("is_first_buy_gem_2500", false, dataEncryption, true);
+		this.isFirstBuyGem1250 = new BoolProfileData("is_first_buy_gem_5000", false, dataEncryption, true);
 		this.isPurchasedStarterPack = new BoolProfileData("is_purchased_starter_pack", false, dataEncryption, true);
 		this.isClaimNewbiePack = new BoolProfileData("is_claim_newbie_pack", false, dataEncryption, true);
 		this.isClaimHeroPack = new BoolProfileData("is_claim_hero_pack", false, dataEncryption, true);
@@ -257,12 +257,12 @@ public class UserProfile
 		this.isShowRateMap1.Set(newData.isShowRateMap1);
 		this.isShowRateMap2.Set(newData.isShowRateMap2);
 		this.isShowRateMap3.Set(newData.isShowRateMap3);
-		this.isFirstBuyGem100.Set(newData.isFirstBuyGem100);
-		this.isFirstBuyGem300.Set(newData.isFirstBuyGem300);
-		this.isFirstBuyGem500.Set(newData.isFirstBuyGem500);
-		this.isFirstBuyGem1000.Set(newData.isFirstBuyGem1000);
-		this.isFirstBuyGem2500.Set(newData.isFirstBuyGem2500);
-		this.isFirstBuyGem5000.Set(newData.isFirstBuyGem5000);
+		this.isFirstBuyGem40.Set(newData.isFirstBuyGem100);
+		this.isFirstBuyGem80.Set(newData.isFirstBuyGem300);
+		this.isFirstBuyGem160.Set(newData.isFirstBuyGem500);
+		this.isFirstBuyGem350.Set(newData.isFirstBuyGem1000);
+		this.isFirstBuyGem700.Set(newData.isFirstBuyGem2500);
+		this.isFirstBuyGem1250.Set(newData.isFirstBuyGem5000);
 		this.isPurchasedStarterPack.Set(newData.isPurchasedStarterPack);
 		this.isClaimNewbiePack.Set(newData.isClaimNewbiePack);
 		this.isClaimHeroPack.Set(newData.isClaimHeroPack);
@@ -330,12 +330,12 @@ public class UserProfile
 			isShowRateMap1 = this.isShowRateMap1,
 			isShowRateMap2 = this.isShowRateMap2,
 			isShowRateMap3 = this.isShowRateMap3,
-			isFirstBuyGem100 = this.isFirstBuyGem100,
-			isFirstBuyGem300 = this.isFirstBuyGem300,
-			isFirstBuyGem500 = this.isFirstBuyGem500,
-			isFirstBuyGem1000 = this.isFirstBuyGem1000,
-			isFirstBuyGem2500 = this.isFirstBuyGem2500,
-			isFirstBuyGem5000 = this.isFirstBuyGem5000,
+			isFirstBuyGem100 = this.isFirstBuyGem40,
+			isFirstBuyGem300 = this.isFirstBuyGem80,
+			isFirstBuyGem500 = this.isFirstBuyGem160,
+			isFirstBuyGem1000 = this.isFirstBuyGem350,
+			isFirstBuyGem2500 = this.isFirstBuyGem700,
+			isFirstBuyGem5000 = this.isFirstBuyGem1250,
 			isPurchasedStarterPack = this.isPurchasedStarterPack,
 			isClaimNewbiePack = this.isClaimNewbiePack,
 			isClaimHeroPack = this.isClaimHeroPack,

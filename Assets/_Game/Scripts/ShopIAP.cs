@@ -79,6 +79,8 @@ public class ShopIAP : Singleton<ShopIAP>
 
     public TMP_Text[] priceLabels;
 
+    public GameObject[] x2Banners;
+
     public GameObject[] dissableObjects;
 
     public GameObject enoughCoinScreen;
@@ -266,55 +268,119 @@ public class ShopIAP : Singleton<ShopIAP>
 
     public void BuyGem100()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_100.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem40();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_40.productId, null);
     }
 
     public void BuyGem300()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_300.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem80();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_80.productId, null);
     }
 
     public void BuyGem500()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_500.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem160();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_160.productId, null);
     }
 
     public void BuyGem1000()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_1000.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem350();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_350.productId, null);
     }
 
     public void BuyGem2500()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_2500.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem700();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_700.productId, null);
     }
 
     public void BuyGem5000()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_5000.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyGem1250();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.GEM_1250.productId, null);
     }
 
     public void BuyTicket0()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.Ticket0.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyTicket5();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.TICKET_5.productId, null);
     }
     public void BuyTicket1()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.Ticket1.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyTicket17();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.TICKET_17.productId, null);
     }
     public void BuyTicket2()
     {
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.Ticket2.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyTicket35();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.TICKET_35.productId, null);
     }
     public void BuyTicket3()
     {
-#if UNITY_EDITOR
-        UnityEngine.Debug.Log("buy unity");
-        ProcessBuyTicket3();
-#elif UNITY_ANDROID
-        InAppPurchaseController.Instance.BuyProductID(ProductDefine.Ticket3.productId, null);
+#if CHEAT_ENABLED
+        ProcessBuyTicket80();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
 #endif
 
+        InAppPurchaseController.Instance.BuyProductID(ProductDefine.TICKET_80.productId, null);
     }
 
     public void BuyEverybodyFavorite()
@@ -369,6 +435,13 @@ public class ShopIAP : Singleton<ShopIAP>
 
     public void BuyStarterPack()
     {
+#if CHEAT_ENABLED
+        ProcessBuyStarterPack();
+        ProfileManager.SaveAll();
+        SoundManager.Instance.PlaySfx("sfx_purchase_success", 0f);
+        return;
+#endif
+
         InAppPurchaseController.Instance.BuyProductID(ProductDefine.STARTER_PACK.productId, null);
     }
 
@@ -461,49 +534,49 @@ public class ShopIAP : Singleton<ShopIAP>
         {
             return;
         }
-        if (string.Equals(productId, ProductDefine.GEM_100.productId, StringComparison.Ordinal))
+        if (string.Equals(productId, ProductDefine.GEM_40.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem100();
+            this.ProcessBuyGem40();
         }
-        else if (string.Equals(productId, ProductDefine.GEM_300.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.GEM_80.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem300();
+            this.ProcessBuyGem80();
         }
-        else if (string.Equals(productId, ProductDefine.GEM_500.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.GEM_160.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem500();
+            this.ProcessBuyGem160();
         }
-        else if (string.Equals(productId, ProductDefine.GEM_1000.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.GEM_350.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem1000();
+            this.ProcessBuyGem350();
         }
-        else if (string.Equals(productId, ProductDefine.GEM_2500.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.GEM_700.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem2500();
+            this.ProcessBuyGem700();
         }
-        else if (string.Equals(productId, ProductDefine.GEM_5000.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.GEM_1250.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyGem5000();
+            this.ProcessBuyGem1250();
         }
         else if (string.Equals(productId, ProductDefine.STARTER_PACK.productId, StringComparison.Ordinal))
         {
             this.ProcessBuyStarterPack();
         }
-        else if (string.Equals(productId, ProductDefine.Ticket0.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.TICKET_5.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyTicket0();
+            this.ProcessBuyTicket5();
         }
-        else if (string.Equals(productId, ProductDefine.Ticket1.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.TICKET_17.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyTicket1();
+            this.ProcessBuyTicket17();
         }
-        else if (string.Equals(productId, ProductDefine.Ticket2.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.TICKET_35.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyTicket2();
+            this.ProcessBuyTicket35();
         }
-        else if (string.Equals(productId, ProductDefine.Ticket3.productId, StringComparison.Ordinal))
+        else if (string.Equals(productId, ProductDefine.TICKET_80.productId, StringComparison.Ordinal))
         {
-            this.ProcessBuyTicket3();
+            this.ProcessBuyTicket80();
         }
         // else if (string.Equals(productId, ProductDefine.EVERY_FAVORITE.productId, StringComparison.Ordinal))
         // {
@@ -563,107 +636,120 @@ public class ShopIAP : Singleton<ShopIAP>
             this.priceLabels[i].text = localizedPriceString;
             Debug.Log("product id - " + listProducts[i].productId + " price - " + this.priceLabels[i].text);
         }
+
+        x2Banners[0].SetActive(!ProfileManager.UserProfile.isFirstBuyGem40);
+        x2Banners[1].SetActive(!ProfileManager.UserProfile.isFirstBuyGem80);
+        x2Banners[2].SetActive(!ProfileManager.UserProfile.isFirstBuyGem160);
+        x2Banners[3].SetActive(!ProfileManager.UserProfile.isFirstBuyGem350);
+        x2Banners[4].SetActive(!ProfileManager.UserProfile.isFirstBuyGem700);
+        x2Banners[5].SetActive(!ProfileManager.UserProfile.isFirstBuyGem1250);
     }
 
-    private void ProcessBuyGem100()
+    private void ProcessBuyGem40()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem100) ? 200 : 100;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem40) ? 80 : 40;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem100.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem40.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            100
+            40
         });
+        x2Banners[0].SetActive(false);
     }
 
-    private void ProcessBuyGem300()
+    private void ProcessBuyGem80()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem300) ? 630 : 315;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem80) ? 160 : 80;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem300.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem80.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            300
+            80
         });
+        x2Banners[1].SetActive(false);
     }
 
-    private void ProcessBuyGem500()
+    private void ProcessBuyGem160()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem500) ? 1100 : 550;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem160) ? 320 : 160;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem500.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem160.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            500
+            160
         });
+        x2Banners[2].SetActive(false);
     }
 
-    private void ProcessBuyGem1000()
+    private void ProcessBuyGem350()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem1000) ? 2500 : 1250;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem350) ? 700 : 350;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem1000.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem350.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            1000
+            350
         });
+        x2Banners[3].SetActive(false);
     }
 
-    private void ProcessBuyGem2500()
+    private void ProcessBuyGem700()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem2500) ? 7500 : 3750;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem700) ? 1400 : 700;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem2500.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem700.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            2500
+            700
         });
+        x2Banners[4].SetActive(false);
     }
 
-    private void ProcessBuyGem5000()
+    private void ProcessBuyGem1250()
     {
-        int num = (!ProfileManager.UserProfile.isFirstBuyGem5000) ? 20000 : 10000;
+        int num = (!ProfileManager.UserProfile.isFirstBuyGem1250) ? 2500 : 1250;
         GameData.playerResources.ReceiveGem(num);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} gems", num), ToastLength.Normal);
-        ProfileManager.UserProfile.isFirstBuyGem5000.Set(true);
+        ProfileManager.UserProfile.isFirstBuyGem1250.Set(true);
         this.CheckLabelBonusGem();
         EventLogger.LogEvent("N_BuyGem", new object[]
         {
-            5000
+            1250
         });
+        x2Banners[5].SetActive(false);
     }
 
-    private void ProcessBuyTicket0()
+    private void ProcessBuyTicket5()
     {
         GameData.playerResources.ReceiveTournamentTicket(5);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} tickets", 5), ToastLength.Normal);
         // ProfileManager.UserProfile.isFirstBuyGem5000.Set(true);
         this.CheckLabelBonusGem();
     }
-    private void ProcessBuyTicket1()
+    private void ProcessBuyTicket17()
     {
         GameData.playerResources.ReceiveTournamentTicket(17);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} tickets", 17), ToastLength.Normal);
         // ProfileManager.UserProfile.isFirstBuyGem5000.Set(true);
         this.CheckLabelBonusGem();
     }
-    private void ProcessBuyTicket2()
+    private void ProcessBuyTicket35()
     {
         GameData.playerResources.ReceiveTournamentTicket(35);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} tickets", 35), ToastLength.Normal);
         this.CheckLabelBonusGem();
     }
-    private void ProcessBuyTicket3()
+    private void ProcessBuyTicket80()
     {
         GameData.playerResources.ReceiveTournamentTicket(80);
         Singleton<Popup>.Instance.ShowToastMessage(string.Format("Received {0} tickets", 80), ToastLength.Normal);

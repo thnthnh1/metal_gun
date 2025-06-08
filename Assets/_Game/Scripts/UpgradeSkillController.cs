@@ -166,7 +166,7 @@ public class UpgradeSkillController : MonoBehaviour
 		this.selectingSkillId = -1;
 		this.priceUpgrade = 0;
 		this.skillIcon.sprite = this.ramboIcon.sprite;
-		this.skillIcon.SetNativeSize();
+		this.skillIcon.GetComponent<RectTransform>().sizeDelta = new Vector2(120f, 120f);
 		this.textGuide.gameObject.SetActive(true);
 		this.textSkillName.text = string.Empty;
 		this.textSkillDescriptionMain.text = string.Empty;
