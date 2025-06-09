@@ -965,6 +965,10 @@ public class Rambo_0 : Rambo
 
 	public override void TakeDamage(float damage)
 	{
+#if CHEAT_ENABLED
+		damage = 0;
+#endif
+
 		if (!this.isDead)
 		{
 			if (this.isImmortal)
