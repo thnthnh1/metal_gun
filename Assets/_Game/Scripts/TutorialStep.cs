@@ -5,6 +5,9 @@ public class TutorialStep : MonoBehaviour
 {
 	public TutorialType type;
 
+	[SerializeField]
+	private GameObject _skipBtn;
+
 	public TutorialSubStep[] subSteps;
 
 	private int curSubStepIndex;
@@ -47,6 +50,11 @@ public class TutorialStep : MonoBehaviour
 
 	public virtual void Skip()
 	{
+		if (_skipBtn != null)
+        {
+			_skipBtn.SetActive(false);
+        }
+
 		this.Complete();
 		EventLogger.LogEvent("SkipTut", new object[]
 		{
@@ -56,6 +64,11 @@ public class TutorialStep : MonoBehaviour
 
 	public virtual void Complete()
 	{
+		if (_skipBtn != null)
+		{
+			_skipBtn.SetActive(false);
+		}
+
 		GameData.isShowingTutorial = false;
 		GameData.playerTutorials.SetComplete(this.type);
 		this.Active(false);

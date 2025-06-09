@@ -338,6 +338,8 @@ public class Setting : MonoBehaviour
 	public void ResetData()
 	{
 		ProfileManager.DeleteAll();
+		ProfileManager.SaveAll();
+
 		string text = Resources.Load<TextAsset>("JSON/New Player Data/new_player_resources_data").text;
 		ProfileManager.UserProfile.playerResourcesData.Set(text);
 		GameData.playerResources = JsonConvert.DeserializeObject<_PlayerResourcesData>(text);
@@ -377,7 +379,6 @@ public class Setting : MonoBehaviour
 
 		base.gameObject.SetActive(false);
 		SceneFading.Instance.FadeOutAndLoadScene("Menu", false, 2f);
-
-
+		
 	}
 }
