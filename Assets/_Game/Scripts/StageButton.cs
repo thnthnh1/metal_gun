@@ -64,7 +64,10 @@ public class StageButton : MonoBehaviour
             this.ActiveStars(0);
             this.isLock = true;
         }
+
+#if CHEAT_ENABLED
         this.isLock = false; //testing to unlock levels added by hardik
+#endif
 
         string currentProgressStageId = MapUtils.GetCurrentProgressStageId();
         MapType mapType = MapUtils.GetMapType(currentProgressStageId);
